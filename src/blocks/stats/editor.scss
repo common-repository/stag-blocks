@@ -1,0 +1,49 @@
+.wp-block-sgb-stats {
+	&__count {
+		margin: 0;
+		input[type="text"] {
+			border: 0 !important;
+			box-shadow: none !important;
+			outline: 0 !important;
+			text-align: inherit;
+			appearance: textfield;
+			font-size: inherit;
+			background-color: transparent;
+			padding: 0;
+
+			&::-webkit-inner-spin-button,
+			&::-webkit-outer-spin-button {
+				appearance: none;
+				margin: 0;
+			}
+		}
+	}
+
+	&__counter {
+		position: relative;
+	}
+
+	&__add {
+		.dashicon {
+			transform: translateY(5px);
+		}
+	}
+
+	&__remove {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.is-selected {
+		outline: 4px solid #0085ba;
+		outline-offset: -4px;
+	}
+
+	+ .blocks-gallery-item {
+		text-align: right;
+		button {
+			display: inline-flex;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.wp-block-sgb-stats {
+	display: grid;
+	grid-gap: 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	&.alignfull {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@include media($breakpoint__md) {
+		grid-template-columns: 1fr 1fr;
+
+		&.columns-1 {
+			grid-template-columns: 1fr;
+		}
+		&.columns-3 {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		&.columns-4 {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+
+	&__counter {
+		background: #F6F6F6;
+		padding: 50px 25px;
+	}
+
+	&__count {
+		font-size: 40px;
+		font-weight: bold;
+		color: var(--sgb-accent, #F1413D);
+	}
+}
